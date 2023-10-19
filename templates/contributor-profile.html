@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plate Saver App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .app-header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .card-text {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .card-link {
+      color: #007bff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .card-link:hover {
+      text-decoration: underline;
+   </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/home">Add Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/fetch-contributor">View Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/search">Search Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/manage-list">Manage list</a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="app-header">
+      <h1>Plate Saver App</h1>
+      <p>Dear {{ name }} <br />Welcome to Plate Saver App</p>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{NourishContributor['name']}}</h4>
+        <p class="card-text">Phone: {{NourishContributor['phone']}}</p>
+        <p class="card-text">Email: {{NourishContributor['email']}}</p>
+        <p class="card-text">Address: {{NourishContributor['address']}}</p>
+        <p class="card-text">Type: {{NourishContributor['type']}}</p>
+        <p class="card-text">CreatedOn: {{NourishContributor['createdOn']}}</p>
+        <a href="/add-list/{{NourishContributor['_id']}}" class="card-link">Add list</a>
+        <a href="/fetch-list/{{NourishContributor['_id']}}" class="card-link">View list</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

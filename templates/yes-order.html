@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+</head>
+
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plate Saver App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .app-header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+ <div class="container">
+   <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/home2">Add Philanthropists</a></li>
+            <li class="nav-item"><a class="nav-link" href="/fetch-philanthropists">View Philanthropists</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Search Philanthropists</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">View list</a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+
+          </ul>
+        </div>
+      </nav>
+  <div class="app-header">
+    <h1>Plate Saver App</h1>
+    <p>Dear {{ name }} <br />Welcome to Plate Saver App</p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Ordered for {{ doc['name'] }}</h4>
+      <h5>Contact info for {{ doc['NourishContributor_name'] }}</h5>
+      <p class="card-text">Name: {{ doc['NourishContributor_name'] }}</p>
+<!--      <p class="card-text">Phone: {{list['NourishContributor_email']['phone']}}</p>-->
+<!--      <p class="card-text">email: {{list['NourishContributor_email']['email']}}</p>-->
+<!--      <p class="card-text">address: {{list['NourishContributor_email']['address']}}</p>-->
+<!--      <p class="card-text">type: {{list['NourishContributor_email']['type']}}</p>-->
+<!--      <p class="card-text">CreatedOn: {{list['NourishContributor_email']['createdOn']}}</p>-->
+<a href="#" class="card-link">Add more </a>
+    <a href="#" class="card-link">Cancel order</a>
+
+
+    </div>
+  </div>
+</div>

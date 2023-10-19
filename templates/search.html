@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plate Saver App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .app-header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+    .mb-3 {
+      margin-bottom: 15px;
+    }
+    .mt-3 {
+      margin-top: 15px;
+    }
+    .form-control {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 8px;
+      width: 100%;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/home">Add Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/fetch-contributor">View Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Search Contributor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/manage-list">Manage list</a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    <div class="app-header">
+      <h1>Plate Saver App</h1>
+      <p>dear {{name}} <br />Welcome to Plate Saver App</p>
+    </div>
+    <br>
+    <h2>Search Contributor</h2>
+    <form action="/search-contributor" method="post">
+
+      <div class="mb-3 mt-3">
+        <label for="email">Enter Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="sukh@exmple.com" name="email">
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Search Contributor</button>
+    </form>
+  </div>
+</body>
+</html>
