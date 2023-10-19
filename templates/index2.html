@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plate Saver App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .app-header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="app-header">
+    <h1>Plate Saver App</h1>
+    <p>Welcome to Plate Saver App</p>
+    <h2>Philanthropists</h2>
+  </div>
+  <div class="container">
+  <h2>Login Here</h2>
+    <form action="/login-philanthropists" method="post">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="pwd" placeholder="enter password">
+    </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+      <a href="/register2">New User? Register Here</a>
+</div>
+</div>
+</body>
+</html>
