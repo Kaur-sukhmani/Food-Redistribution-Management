@@ -9,10 +9,10 @@ This will streamline the redistribution of surplus food, significantly reducing 
 VISION:
 Our project is underpinned by a powerful vision: a world where surplus food from commercial enterprises doesn't languish in landfills but instead flows efficiently to combat hunger and enhance food security.
 
-FACILITATING CONNECTIVITY 🤝
+FACILITATING CONNECTIVITY :
 Our platform is the nexus, bringing together food providers and organizations dedicated to food donation. Its core purpose is to optimize the redistribution process, ensuring that surplus food reaches those who need it with unparalleled promptness and efficiency.
 
-KEY FEATURES:
+KEY FEATURES :
 Seamless Integration: Demonstrating expertise in Python, Flask, and database management tools (SQL/MongoDB) to create a flawless connection between food providers and charitable organizations.
 Real-time Monitoring: Utilizing cutting-edge tracking and notification tools to keep an eye on available surplus food and receive instant alerts.
 Efficient Logistics: Incorporating logistics management software to minimize delays in food delivery through streamlined processes.
