@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plate Saver App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .app-header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .btn {
+      margin: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+    <body>
+<div class="container">
+  <div class="app-header">
+    <h1>Plate Saver App</h1>
+    <p>Welcome to Plate Saver App</p>
+    <h3>Food Contributor</h3>
+  </div>
+  <br />
+
+  <h2>Login Here:</h2>
+  <form action="/login-contributor" method="post">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+      <br>
+  <a href ="/register1">New User? Register here</a>
+</div>
+  </div>
+</body>
+</html>
